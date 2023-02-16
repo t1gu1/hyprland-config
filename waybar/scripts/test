@@ -1,0 +1,9 @@
+const { exec } = require("child_process");
+
+exec("nautilus")
+
+console.log("")
+
+setTimeout(() => {
+console.log("")
+}, 3000)

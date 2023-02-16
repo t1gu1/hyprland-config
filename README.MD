@@ -31,14 +31,17 @@ Change it in nwg-look! (It will be the `Bloom` theme)
 I simply use `Matcha-dark-azul` since it fit perfectly with the bloom icon theme
 
 ## Apply Themes
-
-### Pcmanfm
+#
+#### Pcmanfm (Recommended / Easiest to setup)
 
 Simply use `nwg-look` for icon and global theme
 
-### Dolphin
+P.S. in pcmanfm, add kitty as the terminal emulator in `Edit / Preferences / Advanced`
 
-P.S. Pcmanfm feel better and easier to setup and use
+### Thunar 
+Simply use `nwg-look` for icon and global theme
+
+### Dolphin (Help me on this one)
 
 `yay -S qt5ct`
 `yay -S dolphin`

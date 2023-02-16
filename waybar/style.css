@@ -52,6 +52,8 @@ tooltip {
 #custom-updates,
 #custom-caffeine,
 #custom-weather,
+#custom-recording,
+#custom-keyboard-state,
 #window,
 #clock,
 #battery,
@@ -149,4 +151,9 @@ tooltip {
     border-radius: 0px 10px 10px 0px;
     border-right: 0px;
     margin-left: 0px;
+}
+
+#custom-recording {
+    border-radius: 10px;
+    margin-right: 10px;
 }

@@ -16,12 +16,14 @@
   ],
   "modules-right": [
     "tray",
+    "custom/recording",
     "custom/updates",
     "custom/language",
     "battery",
     "backlight",
     "pulseaudio",
-    "pulseaudio#microphone"
+    "pulseaudio#microphone",
+    "custom/keyboard-state",
   ],
   "hyprland/window": {
     "format": "{}"
@@ -43,6 +45,11 @@
       "9": [],
       "10": []
     }
+  },
+  "custom/recording": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/record-screend",
+    "on-click": "exec ~/.config/waybar/scripts/record-screen"
   },
   "custom/updates": {
     "exec": "(pacman -Qu ; yay -Qua) | wc -l",
@@ -130,5 +137,5 @@
     "on-scroll-up": "pamixer --default-source -i 5",
     "on-scroll-down": "pamixer --default-source -d 5",
     "scroll-step": 5
-  }
+  },
 }
