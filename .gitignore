@@ -1,0 +1,21 @@
+# Ignore all
+*
+
+# Except these files
+!.gitignore
+!hypr
+!hypr/*
+!waybar
+!waybar/*
+!wofi
+!wofi/*
+!rofi
+!rofi/*
+!swaylock
+!swaylock/*
+!wlogout
+!wlogout/*
+!superfile
+!superfile/*
+!kitty
+!kitty/*
