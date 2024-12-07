@@ -13,7 +13,7 @@
     "margin-bottom": 0,
     "margin-right": 10,
 
-    "spacing": 5, // Gaps between modules (4px)
+    "spacing": 6, // Gaps between modules (4px)
 
     "modules-left": [
         //"custom/rofi",
@@ -36,11 +36,11 @@
         "memory",
         "cpu",
         "battery",
-        //"pulseaudio",
+        "pulseaudio",
         "wireplumber",
         "custom/screenshot_t",
-        "custom/power",
-        "tray"
+        "tray",
+        "custom/power"
     ],
 
 
@@ -136,6 +136,7 @@
         "on-click-right": "wl-copy $(ip address show up scope global | grep inet6 | head -n1 | cut -d/ -f 1 | tr -d [:space:] | cut -c6-)",
         "tooltip-format": " {bandwidthUpBits}  {bandwidthDownBits}\n{ifname}\n{ipaddr}/{cidr}\n",
         "tooltip-format-wifi": " {essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\n {bandwidthUpBits}  {bandwidthDownBits}",
+        "on-click": "nmtui",
         "interval": 10
     },
     "custom/storage": {
@@ -201,7 +202,7 @@
     "custom/power": {
         "format": "",
         "tooltip": false,
-        "on-click": "wlogout"
+        "on-click": "wlogout -b 2"
     },
 
     "clock": {

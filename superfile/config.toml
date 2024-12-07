@@ -22,7 +22,7 @@ default_directory = "."
 file_size_use_si = false
 #
 # Default sort type (0: Name, 1: Size, 2: Date Modified).
-default_sort_type = 0
+default_sort_type = 2
 #
 # Default sort order (false: Ascending, true: Descending).
 sort_order_reversed = false
